@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9afe7931-c05b-4bf3-b933-6c25be3f6ede" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1StmZXaUxSolFlljv2QRCpNBM6L" />
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.FormyTestButtons.UsingArrayToClickAndGetTextOfButtons">
+    <configuration name="FormyTestButtons.UsingArrayForTopSectionOfButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="formy_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.FormyTestButtons" />
+      <option name="METHOD_NAME" value="UsingArrayForTopSectionOfButtons" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormyTestButtons.UsingArrayToClickAndGetTextOfButtons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="formy_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.FormyTestButtons" />
+      <option name="METHOD_NAME" value="UsingArrayToClickAndGetTextOfButtons" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormyTestButtons.verifyInfoButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="formy_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.FormyTestButtons" />
+      <option name="METHOD_NAME" value="verifyInfoButton" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormyTestButtons.verifySuccessButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="formy_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.FormyTestButtons" />
+      <option name="METHOD_NAME" value="verifySuccessButton" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormyTestButtons.verifyWarningButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="formy_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.FormyTestButtons" />
+      <option name="METHOD_NAME" value="verifyWarningButton" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FormyTestButtons.UsingArrayToClickAndGetTextOfButtons" />
+        <item itemvalue="JUnit.FormyTestButtons.UsingArrayForTopSectionOfButtons" />
+        <item itemvalue="JUnit.FormyTestButtons.verifyInfoButton" />
+        <item itemvalue="JUnit.FormyTestButtons.verifyWarningButton" />
+        <item itemvalue="JUnit.FormyTestButtons.verifySuccessButton" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9afe7931-c05b-4bf3-b933-6c25be3f6ede" name="Default Changelist" comment="" />
+      <created>1572391321742</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572391321742</updated>
+    </task>
+    <servers />
+  </component>
+</project>
