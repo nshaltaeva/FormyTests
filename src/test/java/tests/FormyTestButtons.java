@@ -114,6 +114,7 @@ public class FormyTestButtons {
     @Test
     public void UsingArrayToClickAndGetTextOfButtons() throws InterruptedException {
         Button();
+        Thread.sleep(2000);
         List<WebElement> arrayLocator = driver.findElements(By.xpath("/html/body/div/form/div[2]/div/div/div/button"));
 
         for (WebElement element : arrayLocator) {
@@ -129,12 +130,19 @@ public class FormyTestButtons {
 
         Button();
 
+        Thread.sleep(2000);
+
         List<WebElement> topBottoms = driver.findElements(By.xpath("/html/body/div/form/div[1]/div/div/button"));
 
         for(int i=0; i<topBottoms.size();i++){
             Thread.sleep(3000);
             topBottoms.get(i).click();
             System.out.println(topBottoms.get(i).getText());
+
+            if(topBottoms.get(i).getText().equals("Warning")){
+                System.out.println(topBottoms.get(i).getText());
+                break;
+            }
 
             }
 
