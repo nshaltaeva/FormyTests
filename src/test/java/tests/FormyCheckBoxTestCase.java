@@ -10,10 +10,21 @@ public class FormyCheckBoxTestCase extends FormyCheckBoxes {
     //junit @Test
 
     @Test
-    public void NavigatetoCheckboxLink() throws InterruptedException {
+    public void NavigatetoCheckboxLink () throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
        driver.get("http://formy-project.herokuapp.com");
        NavigateToDesiredLink("Checkbox");
+
+       driver.close();
+    }
+
+    @Test
+    public void VerifyCheckBoxTest() throws InterruptedException {
+        GoToFormyWebPage();
+        NavigateToDesiredLink("Checkbox");
+        VerifyCheckBoxTestNames();
+
+        driver.close();
     }
 }

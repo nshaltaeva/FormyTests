@@ -1,8 +1,10 @@
 package tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
@@ -14,7 +16,12 @@ public class FormyCheckBoxes {
     public WebDriver driver;
    // locators
 
-  //  methods
+    public void GoToFormyWebPage(){
+        WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
+        driver.get("http://formy-project.herokuapp.com");
+    }
+      //  methods
     public void NavigateToDesiredLink(String checkbox) throws InterruptedException {
        List<WebElement> linksToNavigate = driver.findElements(By.xpath("/html/body/div/div/li[3]/a"));
         for (WebElement link: linksToNavigate) {
@@ -28,6 +35,14 @@ public class FormyCheckBoxes {
         }
     }
   //  Inheritance
+    public void VerifyCheckBoxTestNames() throws InterruptedException {
+       List<WebElement>  checkboxes = driver.findElements(By.xpath("/html/body/div/div/div/div"));
 
+       for(int i=0; i<checkboxes.size();i++){
+           String result = checkboxes.get(i).getText();
+           Thread.sleep(3000);
+           System.out.println("Result " +" "+ (i+1) +" " + result);
+       }
+    }
 
 }

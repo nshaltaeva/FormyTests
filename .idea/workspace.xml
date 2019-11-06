@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9afe7931-c05b-4bf3-b933-6c25be3f6ede" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FormyCheckBoxTestCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/FormyCheckBoxes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FormyTestButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FormyTestButtons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/FormyTestButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/FormyTestButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FormyCheckBoxTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FormyCheckBoxTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/FormyCheckBoxes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/FormyCheckBoxes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/FormyCheckBoxTestCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/FormyCheckBoxTestCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/FormyCheckBoxes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/FormyCheckBoxes.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FormyCheckBoxTestCase.NavigatetoCheckboxLink">
+  <component name="RunManager" selected="JUnit.FormyCheckBoxTestCase.VerifyCheckBoxTest">
     <configuration name="FormyCheckBoxTestCase.NavigatetoCheckboxLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="formy_project" />
       <extension name="coverage">
@@ -62,6 +61,22 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.FormyCheckBoxTestCase" />
       <option name="METHOD_NAME" value="NavigatetoCheckboxLink" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FormyCheckBoxTestCase.VerifyCheckBoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="formy_project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.FormyCheckBoxTestCase" />
+      <option name="METHOD_NAME" value="VerifyCheckBoxTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,29 +130,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FormyTestButtons.verifyWarningButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="formy_project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.FormyTestButtons" />
-      <option name="METHOD_NAME" value="verifyWarningButton" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FormyCheckBoxTestCase.VerifyCheckBoxTest" />
         <item itemvalue="JUnit.FormyCheckBoxTestCase.NavigatetoCheckboxLink" />
         <item itemvalue="JUnit.FormyTestButtons.UsingArrayForTopSectionOfButtons" />
         <item itemvalue="JUnit.FormyTestButtons.UsingArrayToClickAndGetTextOfButtons" />
         <item itemvalue="JUnit.FormyTestButtons.verifyInfoButton" />
-        <item itemvalue="JUnit.FormyTestButtons.verifyWarningButton" />
       </list>
     </recent_temporary>
   </component>
