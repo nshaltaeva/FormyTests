@@ -1,5 +1,6 @@
 package SuperHero.HomePage;
 
+import Utilities.BrowserWait;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ApplyingIterationMethods {
@@ -56,10 +58,58 @@ public class ApplyingIterationMethods {
         }
     }
 
-    @Test(description = "Verify the home page links", priority = 1)
-    public void NavigationDesiredLink() throws InterruptedException {
+    @Test(description = "Verify favorite SuperHero movie", priority = 1)
+    public void VerifyfavoriteSuperHeromovie() throws InterruptedException {
+        LoginWithCredential();
+        List<WebElement> list = driver.findElements(By.xpath("//*[@id='vote-form']//div"));
+        List<String> voteform = new ArrayList<>();
+        for(WebElement each: list){
+            voteform.add(each.getText());
+        }
+        System.out.println(voteform);
+
+        Assert.assertEquals(list.get(0).getText(),voteform.get(0));
+    }
+
+    @Test(description = "Verify to Add SuperHero", priority = 2)
+    public void VerifytoAddSuperHero() throws InterruptedException {
         LoginWithCredential();
 
+        driver.findElement(By.xpath("//*[@id='heroInput']")).sendKeys("Mehmet Gul");
+        driver.findElement(By.xpath("//*[@id=\"addHero-form\"]/button")).click();
+        String compare = "Mehmet Gul";
+
+        List<WebElement> listWebElements = driver.findElements(By.xpath("//*[@id='hero-list']//li"));
+
+        List<String> list = new ArrayList<>();
+
+        Iterator<WebElement> iterator = listWebElements.iterator();
+        while (iterator.hasNext()){
+            list.add(iterator.next().getText());
+        }
+        Assert.assertEquals(list.get(list.size()-1),compare);
+    }
+
+    @Test (description = "Verify to compare votes", priority = 3)
+    public void compareVotes() throws InterruptedException {
+        LoginWithCredential();
+        Thread.sleep(1000);
+        List<WebElement> BeforeVotes = driver.findElements(By.xpath("//table//tbody//tr//td[2]"));
+        List<String> BeforeVotesStorage = new ArrayList<>();
+        for (WebElement each :BeforeVotes) {
+            BeforeVotesStorage.add(each.getText());
+        }
+        WebElement button = driver.findElement(By.xpath("//*[@id='heroMovieRadio2']"));
+        button.click();
+        WebElement submit = driver.findElement(By.xpath("//*[@id='vote-form']/button"));
+        submit.click();
+        Thread.sleep(1000);
+        List<WebElement> AfterVotes = driver.findElements(By.xpath("//table//tbody//tr//td[2]"));
+        for (int i=0; i<BeforeVotes.size(); i++){
+            if(!BeforeVotesStorage.get(i).equalsIgnoreCase(AfterVotes.get(i).getText()))
+                System.out.println(BeforeVotesStorage.get(i)+" " + AfterVotes.get(i).getText());
+        }
+        Assert.assertNotEquals(BeforeVotes.get(1), AfterVotes.get(1).getText());
     }
 
     @AfterMethod
