@@ -27,4 +27,26 @@ public class FormyCheckBoxTestCase extends FormyCheckBoxes {
 
         driver.close();
     }
+
+    @Test
+    public void CheckClickableCheckBoxes() throws InterruptedException {
+        GoToFormyWebPage();
+        NavigateToDesiredLink("Checkbox");
+        ClickCheckBoxes();
+        driver.close();
+
+    }
+
+    @Test
+    public void ClickDesireCheckBoxes () throws InterruptedException {
+        GoToFormyWebPage();
+        NavigateToDesiredLink("Checkbox");
+        ClickDesireCheckBox("checkbox1");
+        ClickDesireCheckBox("checkbox2");
+        driver.close();
+    }
+
+
+
+
 }

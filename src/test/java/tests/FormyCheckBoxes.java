@@ -45,4 +45,35 @@ public class FormyCheckBoxes {
        }
     }
 
+    public void ClickCheckBoxes() throws InterruptedException {
+        List<WebElement> Clickable = driver.findElements(By.xpath("/html/body/div/div/div/div/input"));
+        for(int i=0; i<Clickable.size();i++){
+
+            Clickable.get(i).click();
+            Thread.sleep(2000);
+
+        }
+
+    }
+
+    public void ClickDesireCheckBox(String CheckBox) throws InterruptedException {
+        List<WebElement> DesireBox = driver.findElements(By.xpath("/html/body/div/div/div/div"));
+        List<WebElement> InputCheckBoxes = driver.findElements(By.xpath("/html/body/div/div/div/div/input"));
+        for(int i=0; i<DesireBox.size();i++){
+            Thread.sleep(3000);
+            if(DesireBox.get(i).getText().equalsIgnoreCase(CheckBox)){
+                InputCheckBoxes.get(i).click();
+            }
+        }
+     }
+
+
+
+
+
+
+
+
+
+
 }
